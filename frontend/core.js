@@ -1,6 +1,8 @@
 async function getRecommendations() {
   const query = document.getElementById("query").value;
   const tableBody = document.querySelector("#resultsTable tbody");
+  const loader = document.getElementById("loader");
+  const btn = document.getElementById("btn-submit");
 
   tableBody.innerHTML = "";
 

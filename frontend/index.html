@@ -2,8 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SHL Assessment Recommender</title>
+    <title>SHL Assessment Recommendation</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <h1>SHL Assessment Recommendation Engine</h1>
+
+      <textarea
+        id="query"
+        placeholder="Enter job description or hiring query..."
+      ></textarea>
+
+      <button onclick="getRecommendations()">Get Recommendations</button>
+
+      <table id="resultsTable">
+        <thead>
+          <tr>
+            <th>Assessment Name</th>
+            <th>Test Type</th>
+            <th>URL</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src="core.js"></script>
+  </body>
 </html>

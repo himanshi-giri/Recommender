@@ -1,3 +1,7 @@
 venv/
-backend/data/Gen_AI_Dataset.xlsx
-backend/evaluation/submission_predictions.csv
+*.xlsx
+*.csv
+
+
+# backend/data/Gen_AI_Dataset.xlsx
+# backend/evaluation/submission_predictions.csv

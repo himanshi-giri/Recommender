@@ -14,8 +14,13 @@
         placeholder="Enter job description or hiring query..."
       ></textarea>
 
-      <button onclick="getRecommendations()">Get Recommendations</button>
-
+      <button id="btn-submit" onclick="getRecommendations()">Get Recommendations</button>
+      <div id="loader">
+        <div class="spinner"></div>
+        <span class="loader-text"
+          >Server is waking up... Please wait (30-60s)</span
+        >
+      </div>
       <table id="resultsTable">
         <thead>
           <tr>

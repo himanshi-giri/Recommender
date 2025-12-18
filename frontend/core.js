@@ -42,4 +42,8 @@ async function getRecommendations() {
     console.error(error);
     alert("Error connecting to backend");
   }
+  finally {
+    loader.style.display = "none";
+    btn.disabled = false;
+  }
 }

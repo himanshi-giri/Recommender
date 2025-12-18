@@ -9,6 +9,10 @@ async function getRecommendations() {
     return;
   }
 
+  tableBody.innerHTML = "";
+  loader.style.display = "block";
+  btn.disabled = true;
+  
   try {
     const response = await fetch("https://assessment-recommendor.onrender.com/recommend",
  {

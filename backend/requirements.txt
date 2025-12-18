@@ -41,8 +41,8 @@ starlette==0.50.0
 sympy==1.14.0
 threadpoolctl==3.6.0
 tokenizers==0.22.1
---extra-index-url https://download.pytorch.org/whl/cpu
-torch==2.2.0+cpu
+
+torch
 tqdm==4.67.1
 transformers==4.57.3
 typing-inspection==0.4.2

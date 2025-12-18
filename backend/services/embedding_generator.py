@@ -3,7 +3,7 @@
 import json
 import numpy as np
 from sentence_transformers import SentenceTransformer
-import torch
+
 
 def generate_embeddings():
     print("Loading documents...")
@@ -13,7 +13,7 @@ def generate_embeddings():
     texts = [doc["text"] for doc in documents]
 
     print("Loading SentenceTransformer model...")
-    model = SentenceTransformer("all-MiniLM-L6-v2", device='cpu')
+    model = SentenceTransformer("all-MiniLM-L6-v2")
 
     print("Generating embeddings...")
     embeddings = model.encode(texts, show_progress_bar=True)
